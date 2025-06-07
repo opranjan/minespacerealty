@@ -56,7 +56,7 @@ app.post('/send', [
   // Set up email data
   const mailOptions = {
     from: process.env.SMTP_USER,
-    to: 'no-reply@kamdhenu-thehallmark-minespacerealty.com',
+    to: process.env.SMTP_USER,
     subject: 'Contact Form Submission',
     text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}`
   };
